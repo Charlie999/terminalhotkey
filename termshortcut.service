@@ -1,0 +1,9 @@
+[Unit]
+Description=Terminal open key shortcut listener
+
+[Service]
+ExecStart=/usr/sbin/termshortcutpoller
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
